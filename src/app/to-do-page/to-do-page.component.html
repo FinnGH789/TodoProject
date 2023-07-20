@@ -4,14 +4,14 @@
   </div>
 
   <div class="inputfield1">
-    <input type="text" [(ngModel)]="time" [placeholder]="placeholderTime" />
+    <input type="button" [(ngModel)]="time" [placeholder]="placeholderTime"/>
   </div>
 
   <div class="inputfield1">
     <input
       type="text"
       [(ngModel)]="description"
-      [placeholder]="placeholderDescription"
+      [placeholder]="placeholderDescription"7
       (keydown.enter)="createToDo()"
     />
   </div>
@@ -24,19 +24,28 @@
     *ngFor="let createToDoEntry of toDoList; let i = index"
   >
     <p>
-      Feld 1 Value:
+      Task
       <input
         [disabled]="isDisabled"
         value="{{ createToDoEntry.feld1 }}"
       /><button (click)="deleteEntry(i)">Löschen</button>
     </p>
     <p>
-      Feld 2 Value:
+      Priority
       <input [disabled]="isDisabled" value="{{ createToDoEntry.feld2 }}" />
     </p>
     <p>
-      Feld 3 Value:
+      Finish
       <input [disabled]="isDisabled" value="{{ createToDoEntry.feld3 }}" />
     </p>
   </div>
 </div>
+
+<!-- <div class="dropdownPriority">
+  <input class="ddButton" type="button" [(ngModel)]="time" [placeholder]="placeholderTime">
+  <div class="dropdowncontent">
+    <p>High</p>
+    <p>Middle</p>
+    <p>Low</p>
+  </div>
+</div> -->

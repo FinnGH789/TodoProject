@@ -11,7 +11,7 @@ export class ToDoPageComponent {
 
   placeholderName = 'Insert the Name!';
   
-  placeholderTime = 'Insert the Time!';
+  placeholderTime = 'Select the Priority!';
 
   placeholderDescription = 'Insert an description!';
 

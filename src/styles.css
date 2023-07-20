@@ -8,6 +8,7 @@ body{
     width: 500px;
     height: 300px;
     border-style: solid;
+    border-radius: 6px;
 }
 
 .header-container{
@@ -16,7 +17,7 @@ body{
     height: 100px;
     background-color: white;
     top: 0px;
-    border-style: solid;
+    border-bottom: 3px solid #101010;
 }
 
 .todoformular-container{
@@ -51,20 +52,9 @@ body{
     display: inline-block;
 }
 
-.homeButton:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
 
-  .aboutButton:after{
+
+  .aboutButton:after, .homeButton:after{
     content: '';
     position: absolute;
     width: 100%;
@@ -85,6 +75,29 @@ body{
   .aboutButton:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+
+  .dropdownPriority{
+    position: absolute;
+    display: inline-block;
+  }
+
+  .ddButton{
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdownPriority {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
   }
 
 
