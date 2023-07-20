@@ -2,26 +2,29 @@
 
   <div class="inputfield1">
     <label test>Feld 1</label>
-    <input type="text" #feld1>
+    <input type="text" [(ngModel)]="feld1Value">
   </div>
 
   <div class="inputfield1">
     <label test>Feld 2</label>
-    <input type="text" #feld2>
+    <input type="text" [(ngModel)]="feld2Value">
   </div>
 
   <div class="inputfield1">
     <label test>Feld 3</label>
-    <input type="text" #feld3>
+    <input type="text" [(ngModel)]="feld3Value">
   </div>
   
   <div class="buttonContainer">
-    <input type="button" [value]="buttonDescription" (click)="createToDo(feld1.value, feld2.value, feld3.value)">
+     <input type="button" [value]="createButton" (click)="createToDo()"> <!--Soll nach auf Enter click reagieren! -->
+  </div>
+  <div class="toDoListContainer" *ngFor="let createToDoEntry of toDoList, let i = index"> 
+    <p>Feld 1 Value: <input [disabled]="isDisabled" value="{{createToDoEntry.feld1}}"><button (click)="deleteEntry(i)">Löschen</button></p>
+    <p>Feld 2 Value: <input [disabled]="isDisabled" value="{{createToDoEntry.feld2}}"></p>
+    <p>Feld 3 Value: <input [disabled]="isDisabled" value="{{createToDoEntry.feld3}}"></p>
   </div>
 
-  <div class="toDoListContainer" *ngFor="let list of toDoList, let i = index"> 
-    <p>Feld 1 Value: <input [disabled]="isDisabled" value="{{feld1.value}}"><button (click)="deleteEntry(i)">Löschen</button></p>
-    <p>Feld 2 Value: <input [disabled]="isDisabled" value="{{feld2.value}}"></p>
-    <p>Feld 3 Value: <input [disabled]="isDisabled" value="{{feld3.value}}"></p>
+  <div>
+    <input type="button" value="test" routerLink="/home">
+    <router-outlet></router-outlet>
   </div>
-</div>

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ToDoEntry } from './models/ToDoModel';
 import { TokenType } from '@angular/compiler';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -10,21 +12,27 @@ import { TokenType } from '@angular/compiler';
 export class AppComponent {
   title = 'TodoProject';
 
-  buttonDescription = 'Create!';
+  createButton = 'Create!';
 
   isDisabled = true;
 
   toDoList: Array<ToDoEntry> = [];
 
-  createToDo(feld1 : string, feld2 : string, feld3 : string){
+  feld1Value: string = '';
+  feld2Value: string = '';
+  feld3Value: string = '';
+
+  createToDo(){
     const createToDoEntry =  new ToDoEntry();
-    createToDoEntry.feld1 = feld1;
-    createToDoEntry.feld2 = feld2;
-    createToDoEntry.feld3 = feld3;
-    this.toDoList.push(createToDoEntry)
+    createToDoEntry.feld1 = this.feld1Value;
+    createToDoEntry.feld2 =this.feld2Value;
+    createToDoEntry.feld3 = this.feld3Value;
+    this.toDoList.push(createToDoEntry);
+
+    this.feld1Value = '';
+    this.feld2Value = '';
+    this.feld3Value = ''; 
   }
-
-
   
   deleteEntry(index: number){
     this.toDoList.splice(index, 1)
