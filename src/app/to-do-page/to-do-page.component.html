@@ -1,0 +1,42 @@
+<div class="todoformular-container">
+  <div class="inputfield1">
+    <input type="text" [(ngModel)]="name" [placeholder]="placeholderName" />
+  </div>
+
+  <div class="inputfield1">
+    <input type="text" [(ngModel)]="time" [placeholder]="placeholderTime" />
+  </div>
+
+  <div class="inputfield1">
+    <input
+      type="text"
+      [(ngModel)]="description"
+      [placeholder]="placeholderDescription"
+      (keydown.enter)="createToDo()"
+    />
+  </div>
+
+  <div class="buttonContainer">
+    <input type="button" [value]="createButton" (click)="createToDo()" />
+  </div>
+  <div
+    class="toDoListContainer"
+    *ngFor="let createToDoEntry of toDoList; let i = index"
+  >
+    <p>
+      Feld 1 Value:
+      <input
+        [disabled]="isDisabled"
+        value="{{ createToDoEntry.feld1 }}"
+      /><button (click)="deleteEntry(i)">Löschen</button>
+    </p>
+    <p>
+      Feld 2 Value:
+      <input [disabled]="isDisabled" value="{{ createToDoEntry.feld2 }}" />
+    </p>
+    <p>
+      Feld 3 Value:
+      <input [disabled]="isDisabled" value="{{ createToDoEntry.feld3 }}" />
+    </p>
+  </div>
+</div>

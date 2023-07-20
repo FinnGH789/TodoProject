@@ -1,3 +1,8 @@
+body{
+    background-image: url(\assets\background-image.jpg);
+    margin: 0px;
+}
+
 .toDoListContainer{
     margin-top: 30px;
     width: 500px;
@@ -5,5 +10,81 @@
     border-style: solid;
 }
 
-body{
+.header-container{
+    position: absolute;
+    width: 2000px;
+    height: 100px;
+    background-color: white;
+    top: 0px;
+    border-style: solid;
 }
+
+.todoformular-container{
+    position: absolute;
+    top: 200px;
+}
+
+.todoIcon{
+    color: red;
+    padding: 10px;
+    width: 85px;
+    height: 80px;
+}
+
+.aboutButton{
+    position: absolute;
+    top: 30px;
+    left: 350px;
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.homeButton{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    color: black;
+    font-size: 35px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.homeButton:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .aboutButton:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .homeButton:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .aboutButton:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
