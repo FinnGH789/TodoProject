@@ -1,103 +1,112 @@
-body{
-    background-image: url(\assets\background-image.jpg);
-    margin: 0px;
+body {
+  background-image: url(\assets\background-image.jpg);
+  margin: 0px;
 }
 
-.toDoListContainer{
-    margin-top: 30px;
-    width: 500px;
-    height: 300px;
-    border-style: solid;
-    border-radius: 6px;
+.toDoListContainer {
+  margin-top: 30px;
+  width: 500px;
+  height: 300px;
+  border-style: solid;
+  border-radius: 6px;
 }
 
-.header-container{
-    position: absolute;
-    width: 2000px;
-    height: 100px;
-    background-color: white;
-    top: 0px;
-    border-bottom: 3px solid #101010;
+.header-container {
+  position: absolute;
+  width: 2000px;
+  height: 100px;
+  background-color: white;
+  top: 0px;
+  border-bottom: 3px solid #101010;
 }
 
-.todoformular-container{
-    position: absolute;
-    top: 200px;
+.todoformular-container {
+  position: absolute;
+  top: 200px;
 }
 
-.todoIcon{
-    color: red;
-    padding: 10px;
-    width: 85px;
-    height: 80px;
+.todoIcon {
+  color: red;
+  padding: 10px;
+  width: 85px;
+  height: 80px;
 }
 
-.aboutButton{
-    position: absolute;
-    top: 30px;
-    left: 350px;
-    color: black;
-    font-size: 35px;
-    text-decoration: none;
-    display: inline-block;
+.aboutButton {
+  position: absolute;
+  top: 30px;
+  left: 350px;
+  color: black;
+  font-size: 35px;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.homeButton{
-    position: absolute;
-    top: 30px;
-    left: 200px;
-    color: black;
-    font-size: 35px;
-    text-decoration: none;
-    display: inline-block;
+.homeButton {
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  color: black;
+  font-size: 35px;
+  text-decoration: none;
+  display: inline-block;
 }
 
+.routerButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
+.aboutButton:after,
+.homeButton:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
 
-  .aboutButton:after, .homeButton:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: black;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .homeButton:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+.homeButton:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
-  .aboutButton:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+.aboutButton:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
+.dropdownPriority {
+  position: absolute;
+  display: inline-block;
+}
 
-  .dropdownPriority{
-    position: absolute;
-    display: inline-block;
-  }
+.ddButton {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
 
-  .ddButton{
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
+.dropdownPriority {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  .dropdownPriority {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-
+.hpCaption {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  font-size: 80px;
+}
