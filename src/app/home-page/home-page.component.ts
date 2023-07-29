@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class HomePageComponent {
 
   routerButton = 'Click me to start!'
+
 }

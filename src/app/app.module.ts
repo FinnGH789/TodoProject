@@ -7,13 +7,15 @@ import { FormsModule } from '@angular/forms';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { ToDoPageComponent } from './to-do-page/to-do-page.component';
+import { ButtonDesignComponent } from './button-design/button-design.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     HeaderComponent,
-    ToDoPageComponent
+    ToDoPageComponent,
+    ButtonDesignComponent
   ],
   imports: [
     BrowserModule,
