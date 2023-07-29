@@ -1,6 +1,11 @@
-.homepage-container{
-    padding: 10px;
-}
+.header-container {
+    position: absolute;
+    width: 2000px;
+    height: 100px;
+    background-color: white;
+    top: 0px;
+    border-bottom: 3px solid #101010;
+  }
 
 .hpCaption{
     position: absolute;

@@ -1,0 +1,29 @@
+.todoIcon {
+    color: red;
+    padding: 10px;
+    width: 85px;
+    height: 80px;
+  }
+
+  .header-container{
+    margin-right: 50%;
+    margin-left: 29%;
+    width: 650px;
+    height: 100px;
+    background-color: transparent;
+    border-right: solid;
+    border-left: solid;
+    border-bottom: solid;
+  }
+
+  .aboutButton{
+    position: absolute;
+    top: 2.5%;
+    right: 40%;
+  }
+
+  .homeButton{
+    position: absolute;
+    top: 2.5%;
+    right: 52%;
+  }
