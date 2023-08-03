@@ -1,51 +1,46 @@
-<div class="todoformular-container">
-  <div class="inputfield1">
-    <input type="text" [(ngModel)]="name" [placeholder]="placeholderName" />
-  </div>
+<h1>Insert <br> your Todo <br> here!</h1>
+  <div class="textFieldContainer">
+    <div class="inputfield1">
+      <input class="inputToDo" type="text" [(ngModel)]="name" [placeholder]="placeholderName" />
+    </div>
 
-  <div class="inputfield1">
-    <input type="button" [(ngModel)]="time" [placeholder]="placeholderTime"/>
-  </div>
+    <div class="inputfield1">
+      <input class="inputToDo" type="text" [(ngModel)]="time" [placeholder]="placeholderTime" />
+    </div>
 
-  <div class="inputfield1">
-    <input
-      type="text"
-      [(ngModel)]="description"
-      [placeholder]="placeholderDescription"
-      (keydown.enter)="createToDo()"
-    />
+    <div class="inputfield1">
+      <input
+        class="inputToDo"
+        type="text"
+        [(ngModel)]="description"
+        [placeholder]="placeholderDescription"
+        (keydown.enter)="createToDo()"
+      />
+    </div>
+    <input class="inputToDoButton" type="button" [value]="createButton" (click)="createToDo()" />
   </div>
-
-  <div class="buttonContainer">
-    <input type="button" [value]="createButton" (click)="createToDo()" />
+<div>
+  
   </div>
-  <div
-    class="toDoListContainer"
-    *ngFor="let createToDoEntry of toDoList; let i = index"
-  >
-    <p>
+  
+  <div class="toDoListContainer" >
+    <div *ngFor="let createToDoEntry of toDoList; let i = index">
+    <label>
       Task
       <input
         [disabled]="isDisabled"
         value="{{ createToDoEntry.feld1 }}"
-      /><button (click)="deleteEntry(i)">Löschen</button>
-    </p>
-    <p>
+      />
+    </label>
+    <label>
       Priority
       <input [disabled]="isDisabled" value="{{ createToDoEntry.feld2 }}" />
-    </p>
-    <p>
+    </label>
+    <label>
       Finish
       <input [disabled]="isDisabled" value="{{ createToDoEntry.feld3 }}" />
-    </p>
+    </label>
+    <button class="deleteButton" (click)="deleteEntry(i)">Delete!</button>
+    <button class="editButton">Edit</button>
   </div>
 </div>
-
-<!-- <div class="dropdownPriority">
-  <input class="ddButton" type="button" [(ngModel)]="time" [placeholder]="placeholderTime">
-  <div class="dropdowncontent">
-    <p>High</p>
-    <p>Middle</p>
-    <p>Low</p>
-  </div>
-</div> -->

@@ -34,10 +34,10 @@ export class ToDoPageComponent {
 
     this.name = '';
     this.time = '';
-    this.description = ''; 
+    this.description = '';
   }
-  
-    deleteEntry(index: number){
+
+  deleteEntry(index: number){
     this.toDoList.splice(index, 1)
   } 
 }

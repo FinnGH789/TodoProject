@@ -1,0 +1,91 @@
+h1{
+    position: absolute;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 90px;
+    top: 25%;
+    left: 10%;
+}
+
+.toDoListContainer{
+    position: absolute;
+    left: 70%;
+}
+
+.inputToDo{
+    width: 450px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.textFieldContainer{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+.inputToDoButton{
+    position: absolute;
+    background-color: transparent;
+    left: 6px;
+    border-style: solid;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    transition: 0.5s;
+}
+
+.inputToDoButton:hover{
+    transition: font-size 0.5s ease;
+    background-color: #8a8987;
+}
+
+.entryInput{
+    border-style: 6px;
+    background-color: red;
+}
+
+label{
+    display:block;
+    text-align: right;
+    margin: 10px;
+  }
+
+  .deleteButton{
+    position: absolute;
+    left: 68%;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    transition: 0.5s;
+  }
+
+  .deleteButton:hover{
+    transition: font-size 0.5s ease;
+    background-color: red;
+}
+
+  .editButton{
+    position: absolute;
+    left: 50%;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    transition: 0.5s;
+  }
+
+  .editButton:hover{
+    transition: font-size 0.5s ease;
+    background-color: #8a8987;
+}
