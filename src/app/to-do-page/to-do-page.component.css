@@ -9,6 +9,10 @@ h1{
 .toDoListContainer{
     position: absolute;
     left: 70%;
+    border-style: solid;
+    border-radius: 6px;
+    text-decoration: none;
+    overflow: visible;
 }
 
 .inputToDo{
@@ -55,8 +59,6 @@ label{
   }
 
   .deleteButton{
-    position: absolute;
-    left: 68%;
     background-color: transparent;
     border-style: solid;
     border-radius: 6px;
@@ -70,11 +72,10 @@ label{
   .deleteButton:hover{
     transition: font-size 0.5s ease;
     background-color: red;
+    
 }
 
-  .editButton{
-    position: absolute;
-    left: 50%;
+.editButton{
     background-color: transparent;
     border-style: solid;
     border-radius: 6px;
@@ -88,4 +89,12 @@ label{
   .editButton:hover{
     transition: font-size 0.5s ease;
     background-color: #8a8987;
+}
+
+.interfelder{
+    background-color: whitesmoke;
+    width: 270px;
+    height: 30px; border-style: solid;
+    border-radius: 6px;
+    text-decoration: none;
 }

@@ -23,24 +23,25 @@
   
   </div>
   
-  <div class="toDoListContainer" >
+  <div class="toDoListContainer">
     <div *ngFor="let createToDoEntry of toDoList; let i = index">
     <label>
       Task
       <input
+      class="interfelder"
         [disabled]="isDisabled"
         value="{{ createToDoEntry.feld1 }}"
       />
     </label>
     <label>
       Priority
-      <input [disabled]="isDisabled" value="{{ createToDoEntry.feld2 }}" />
+      <input class="interfelder" [disabled]="isDisabled" value="{{ createToDoEntry.feld2 }}" />
     </label>
     <label>
       Finish
-      <input [disabled]="isDisabled" value="{{ createToDoEntry.feld3 }}" />
+      <input class="interfelder" [disabled]="isDisabled" value="{{ createToDoEntry.feld3 }}" />
     </label>
     <button class="deleteButton" (click)="deleteEntry(i)">Delete!</button>
-    <button class="editButton">Edit</button>
+      <button class="editButton">Edit</button>
   </div>
 </div>
