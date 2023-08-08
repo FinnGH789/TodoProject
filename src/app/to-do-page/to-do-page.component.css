@@ -1,7 +1,7 @@
 h1{
     position: absolute;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: 90px;
+    font-size: 4.688vw;
     top: 25%;
     left: 10%;
 }
@@ -10,17 +10,17 @@ h1{
     position: absolute;
     left: 70%;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 0.313vw;
     text-decoration: none;
     overflow: visible;
 }
 
 .inputToDo{
-    width: 450px;
-    height: 40px;
+    width: 23.438vw;
+    height: 2.344vw;
     background-color: transparent;
-    border-radius: 6px;
-    margin: 5px;
+    border-radius: 0.313vw;
+    margin: 0.260vw;
 }
 
 .textFieldContainer{
@@ -32,12 +32,12 @@ h1{
 .inputToDoButton{
     position: absolute;
     background-color: transparent;
-    left: 6px;
+    left: 0.313vw;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 0.313vw;
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 0.885vw;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     transition: 0.5s;
 }
@@ -48,23 +48,23 @@ h1{
 }
 
 .entryInput{
-    border-style: 6px;
+    border-style: 0.313vw;
     background-color: red;
 }
 
 label{
     display:block;
     text-align: right;
-    margin: 10px;
+    margin: 0.521vw;
   }
 
   .deleteButton{
     background-color: transparent;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 0.313vw;
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 0.885vw;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     transition: 0.5s;
   }
@@ -78,10 +78,10 @@ label{
 .editButton{
     background-color: transparent;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 0.313vw;
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 0.885vw;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     transition: 0.5s;
   }
@@ -94,10 +94,10 @@ label{
 .saveButton{
     background-color: transparent;
     border-style: solid;
-    border-radius: 6px;
+    border-radius: 0.313vw;
     text-decoration: none;
     color: black;
-    font-size: 17px;
+    font-size: 0.885vw;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     transition: 0.5s;
   }
@@ -110,8 +110,8 @@ label{
 
 .interfelder{
     background-color: whitesmoke;
-    width: 270px;
-    height: 30px; border-style: solid;
-    border-radius: 6px;
+    width: 14.063vw;
+    height: 1.563vw; border-style: solid;
+    border-radius: 0.313vw;
     text-decoration: none;
 }

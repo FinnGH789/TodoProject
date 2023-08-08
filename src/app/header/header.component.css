@@ -1,15 +1,15 @@
 .todoIcon {
     color: red;
-    padding: 10px;
-    width: 85px;
-    height: 80px;
+    padding: 0.521vw;
+    width: 4.427vw;
+    height: 4.167vw;
   }
 
   .header-container{
     margin-right: 50%;
     margin-left: 29%;
-    width: 650px;
-    height: 100px;
+    width: 33.854vw;
+    height: 5.208vw;
     background-color: transparent;
     border-right: solid;
     border-left: solid;

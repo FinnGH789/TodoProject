@@ -1,10 +1,10 @@
 .header-container {
     position: absolute;
-    width: 2000px;
-    height: 100px;
+    width: 104.167vw;
+    height: 5.208vw;
     background-color: white;
-    top: 0px;
-    border-bottom: 3px solid #101010;
+    top: 0vw;
+    border-bottom: 0.156vw solid #101010;
   }
 
 .hpCaption{
@@ -12,7 +12,7 @@
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     top: 13%;
     left: 30%;
-    font-size: 80px;
+    font-size: 4.167vw;
 }
 
 .hpButton{
