@@ -17,6 +17,8 @@ export class ToDoPageComponent {
 
   createButton = 'Create!';
 
+  
+
   isDisabled = true;
 
   isHidden = true;
@@ -29,7 +31,6 @@ export class ToDoPageComponent {
 
 
   createToDo = () => {
-
     const createToDoEntry =  new ToDoEntry();
     createToDoEntry.feld1 = this.name;
     createToDoEntry.feld2 =this.time;
