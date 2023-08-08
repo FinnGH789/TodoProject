@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ToDoEntry } from '../models/ToDoModel';
 import { RouterModule } from '@angular/router';
 
@@ -19,13 +19,17 @@ export class ToDoPageComponent {
 
   isDisabled = true;
 
+  isHidden = true;
+
   toDoList: Array<ToDoEntry> = [];
 
   name: string = '';
   time: string = '';
   description: string = '';
 
-  createToDo(){
+
+  createToDo = () => {
+
     const createToDoEntry =  new ToDoEntry();
     createToDoEntry.feld1 = this.name;
     createToDoEntry.feld2 =this.time;
@@ -37,8 +41,23 @@ export class ToDoPageComponent {
     this.description = '';
   }
 
-  deleteEntry(index: number){
+
+
+  deleteEntry = (index: number) => {
     this.toDoList.splice(index, 1)
-  } 
+  }
+
+  editEntry = () => {
+    this.isDisabled = false;
+    this.isHidden = false;
+  }
+
+
+  saveEntry = () => {
+    this.isDisabled = true;
+    this.isHidden = true;
+  }
+
+
 }
 

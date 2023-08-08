@@ -39,9 +39,10 @@
     </label>
     <label>
       Finish
-      <input class="interfelder" [disabled]="isDisabled" value="{{ createToDoEntry.feld3 }}" />
+      <input class="interfelder" [disabled]="isDisabled" value="{{ createToDoEntry.feld3 }}"/>
     </label>
     <button class="deleteButton" (click)="deleteEntry(i)">Delete!</button>
-      <button class="editButton">Edit</button>
+    <button class="editButton" (click)="editEntry()">Edit</button>
+    <button class="saveButton" [hidden]="isHidden" (click)="saveEntry()">Save!</button>
   </div>
 </div>
