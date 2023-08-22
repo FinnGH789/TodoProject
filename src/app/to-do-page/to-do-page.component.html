@@ -17,7 +17,7 @@
         (keydown.enter)="createToDo()"
       />
     </div>
-    <input class="inputToDoButton" type="button" [value]="createButton" (click)="createToDo()" />
+    <input class="inputToDoButton" type="button" [value]="createButton" [disabled]="isNotDisabled" (click)="createToDo()" />
   </div>
 <div>
   

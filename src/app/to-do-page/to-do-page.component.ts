@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { ToDoEntry } from '../models/ToDoModel';
-import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-to-do-page',
@@ -17,9 +16,9 @@ export class ToDoPageComponent {
 
   createButton = 'Create!';
 
-  
-
   isDisabled = true;
+
+  isNotDisabled = false;
 
   isHidden = true;
 
@@ -40,9 +39,11 @@ export class ToDoPageComponent {
     this.name = '';
     this.time = '';
     this.description = '';
+
+    if(this.toDoList.length > 2){
+      this.isNotDisabled = true;
+    }
   }
-
-
 
   deleteEntry = (index: number) => {
     this.toDoList.splice(index, 1)

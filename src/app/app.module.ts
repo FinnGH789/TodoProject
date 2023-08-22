@@ -8,6 +8,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './header/header.component';
 import { ToDoPageComponent } from './to-do-page/to-do-page.component';
 import { ButtonDesignComponent } from './button-design/button-design.component';
+import { PopupComponent } from './popup/popup.component';
+import {  MatDialogModule } from '@angular/material/dialog'
 
 @NgModule({
   declarations: [
@@ -15,13 +17,14 @@ import { ButtonDesignComponent } from './button-design/button-design.component';
     HomePageComponent,
     HeaderComponent,
     ToDoPageComponent,
-    ButtonDesignComponent
+    ButtonDesignComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
